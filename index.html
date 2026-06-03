@@ -5,26 +5,111 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Julia Hoos | Das Coco Collective</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; text-align: center; background-color: #f5ebe0; padding: 40px 20px; color: #4a3f35; margin: 0; }
-        .card { background: #ffffff; max-width: 420px; margin: 0 auto; padding: 40px 30px; border-radius: 20px; box-shadow: 0 10px 25px rgba(74, 63, 53, 0.05); }
-        h1 { margin: 0 0 5px 0; font-size: 1.8rem; font-weight: 600; letter-spacing: -0.5px; }
-        .subtitle { margin: 0 0 35px 0; font-size: 0.95rem; color: #8a7a6e; text-transform: uppercase; letter-spacing: 1.5px; }
-        .contact-btn { display: flex; align-items: center; justify-content: center; background-color: #f7d6d0; color: #4a3f35; text-decoration: none; padding: 16px; margin: 14px 0; border-radius: 14px; font-size: 1rem; font-weight: 500; transition: all 0.2s ease-in-out; }
-        .contact-btn:hover { background-color: #f2c4bc; transform: translateY(-2px); }
-        .emoji { margin-right: 12px; font-size: 1.2rem; }
-        .footer { margin-top: 35px; font-size: 0.85rem; color: #b5a89e; letter-spacing: 0.5px; }
-        .legal-links { margin-bottom: 12px; }
-        .legal-links a { color: #8a7a6e; text-decoration: none; margin: 0 8px; }
-        .legal-links a:hover { text-decoration: underline; }
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
+            text-align: center; 
+            background-color: #f5ebe0; 
+            padding: 40px 20px; 
+            color: #4a3f35; 
+            margin: 0;
+        }
+        .card { 
+            background: #ffffff; 
+            max-width: 420px; 
+            margin: 0 auto; 
+            padding: 40px 30px; 
+            border-radius: 20px; 
+            box-shadow: 0 10px 25px rgba(74, 63, 53, 0.05); 
+        }
+        h1 { 
+            margin: 0 0 5px 0; 
+            font-size: 1.8rem;
+            font-weight: 600;
+            letter-spacing: -0.5px;
+        }
+        .subtitle { 
+            margin: 0 0 35px 0; 
+            font-size: 0.95rem; 
+            color: #8a7a6e;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+        .contact-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f7d6d0; 
+            color: #4a3f35;
+            text-decoration: none;
+            padding: 16px;
+            margin: 14px 0;
+            border-radius: 14px;
+            font-size: 1rem;
+            font-weight: 500;
+            transition: all 0.2s ease-in-out;
+        }
+        .contact-btn:hover {
+            background-color: #f2c4bc; 
+            transform: translateY(-2px);
+        }
+        /* Besonderer Stil für das Event-Feld */
+        .event-btn {
+            background-color: #f2c4bc; /* Ein kräftigeres Rosa für Aufmerksamkeit */
+            border: 2px dashed #8a7a6e; /* Ein eleganter, gestrichelter Rahmen */
+            font-weight: bold;
+        }
+        .event-btn:hover {
+            background-color: #eab0a6;
+        }
+        .emoji {
+            margin-right: 12px;
+            font-size: 1.2rem;
+        }
+        .footer {
+            margin-top: 35px;
+            font-size: 0.85rem;
+            color: #b5a89e;
+            letter-spacing: 0.5px;
+        }
+        .legal-links {
+            margin-bottom: 12px;
+        }
+        .legal-links a {
+            color: #8a7a6e;
+            text-decoration: none;
+            margin: 0 8px;
+        }
+        .legal-links a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
+
     <div class="card">
         <h1>Julia Hoos</h1>
         <div class="subtitle">The Coco Collective</div> 
-        <a href="mailto:join@thecococollective.de" class="contact-btn"><span class="emoji">📧</span> E-Mail schreiben</a>
-        <a href="tel:015254160104" class="contact-btn"><span class="emoji">📞</span> Anrufen</a>
-        <a href="https://instagram.com" target="_blank" class="contact-btn"><span class="emoji">📸</span> Instagram</a>
+        
+        <!-- NEUES ANMELDEFELD FÜR DAS EVENT -->
+        <a href="mailto:join@thecococollective.de?subject=Anmeldung%20Pop-up%20Event%20%22Mat%20%26%20Matcha%22&body=Hi%20Julia%2C%0A%0Ahiermit%20melde%20ich%20mich%20f%C3%BCr%20das%20Pop-up%20Event%20%22Mat%20%26%20Matcha%22%20am%2012.07.2026%20im%20Studio%20Castell%20in%20Bonn%20an.%20Bitte%20sende%20mir%20die%20Anmeldungs-%20und%20Zahlungsinfos%20zu." class="contact-btn event-btn">
+            <span class="emoji">🍵</span> Event-Anmeldung: Mat & Matcha
+        </a>
+
+        <!-- Normaler E-Mail-Button -->
+        <a href="mailto:join@thecococollective.de" class="contact-btn">
+            <span class="emoji">📧</span> Allgemeine E-Mail schreiben
+        </a>
+
+        <!-- Telefon-Button -->
+        <a href="tel:015254160104" class="contact-btn">
+            <span class="emoji">📞</span> Anrufen
+        </a>
+
+        <!-- Instagram-Button -->
+        <a href="https://instagram.com" target="_blank" class="contact-btn">
+            <span class="emoji">📸</span> Instagram
+        </a>
+
         <div class="footer">
             <div class="legal-links">
                 <a href="impressum.html">Impressum & Datenschutz</a> | 
@@ -33,5 +118,6 @@
             © Julia Hoos
         </div>
     </div>
+
 </body>
 </html>
